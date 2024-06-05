@@ -1,0 +1,42 @@
+
+
+CSS SELECTOR
+
+img[src*='/web/images/ohrm_branding.png'] ---> EL ASTERISCO ES UN COMODIN, PUEDE SER REEPLAZADO POR $ 
+input[name='username']
+input[placeholder='Password']
+//button[@type='submit']
+
+
+TESTEAR EN LA CONSOLA:
+document.querySelector("input[name='username']")
+
+
+
+NAME
+By.name("username");
+By.name("password");
+
+
+
+---------------------------------
+//input[contains(@id, '-name')]
+
+input[id*='-name']
+
+//h3[contains(., 'Login')]
+//h3[contains(text(), 'Login')]
+//table//h3
+
+//a[@href='register.php']
+//a[contains(@href, 'register')]
+//a[@href='register.php']
+a[href='register.php']
+a[href*='register']
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+Chromedriver:
+https://googlechromelabs.github.io/chrome-for-testing/
+
+Geckodriver:
+https://github.com/mozilla/geckodriver/releases
+
+testNG dependency: 
+https://mvnrepository.com/artifact/org.testng/testng/
+
+
+TestNG doc:
+https://testng.org/
+
+Selenium dependency:
+https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+
+----------------------------------------------------------------
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.19.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+
+    </dependencies>
+------------------------------------------------------------------
+
+public static WebDriver createNewDriver(String platform) {
+        WebDriver driver;
+
+        System.out.println("Creating session...");
+
+        if ("CHROME".equalsIgnoreCase(platform)) {
+            System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+            driver = new ChromeDriver();
+
+        } else if ("FIREFOX".equalsIgnoreCase(platform)) {
+            System.setProperty("webdriver.gecko.driver", "./geckodriver.exe");
+            driver = new ChromeDriver();
+        } else {
+            System.out.println("The Driver is not selected properly, invalid name: " + platform);
+            return null;
+        }
+
+        return driver;
+    }	
+
+
+-------------------------------------------------------------------
+    @BeforeTest
+    public void setUp(){
+
+    }
+
+    @Test
+    public void seleniumTest1(){
+
+    }
+
+    @AfterTest
+    public void tearDown(){
+
+    }
+--------------------------------------------------------------------	
+
+https://omayo.blogspot.com/	
+	
+	
+	
+	
+------------------------------------------------------------------
+ChromeOptions options = new ChromeOptions();
+options.setBinary("/path/to/other/chrome/binary");
+

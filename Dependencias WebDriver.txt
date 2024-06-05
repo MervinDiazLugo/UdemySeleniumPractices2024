@@ -1,0 +1,26 @@
+
+
+GeckoDriver:
+https://github.com/mozilla/geckodriver/releases
+
+WebDriverManager: 
+https://github.com/bonigarcia/webdrivermanager?tab=readme-ov-file
+
+
+ChromeDriver:
+https://googlechromelabs.github.io/chrome-for-testing/
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>LATEST</version>
+        </dependency>
